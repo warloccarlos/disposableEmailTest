@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="{{url_for('static', filename='jquery-3.6.1.js')}}"></script>
+        <script src="{{url_for('static', filename='bootstrap.min.js')}}"></script>
+        <script src="{{url_for('static', filename='hello.js')}}"></script>
+        <link rel="stylesheet" href="static/bootstrap.min.css">
+        <link rel="stylesheet" href="static/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="jumbotron text-center title mt-3">
+                <h1 class="m-1">Disposable Email Test</h1>
+                <p>This python script tests if the email belongs to a disposable domain or not.</p>
+            </div>
+            <div class="container">
+              <p class="">
+                Thanks for sharing that domain name with us.
+                The domain has been recorded and shall be useful.
+                We shall not forget your contribution.
+              </p>
+              <p>
+                Again, thanks.<br>
+                sd -/<br>
+                Dieter HellStorm
+              </p>
+              <a href="{{url_for('index')}}"><button class="button button-primary">Home</button>
+            </div>
+        </div>
+    </body>
+</html>
