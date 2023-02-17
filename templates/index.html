@@ -10,35 +10,35 @@
     <body>
         <div class="container">
             <div class="jumbotron text-center title mt-3">
-                <h1 class="m-1">Disposable Email Test</h1>
+                <h1 class="m-3">Open Source Applications</h1>
                 <p>This python script tests if the email belongs to a disposable domain or not.</p>
             </div>
-            <div class="container border border-dark">
+            <div class="container border border-dark rounded-4">
               <div class="jumbotron text-center">
-                <h1>Test the Email Address</h1>
+                <h1 class="m-3">Disposable Email Test</h1>
               </div>
               <div class="container form p-1">
                   <form class="form-group p-2" method="POST" action="/emailTest">
-                      <div class="input-group p-1">
+                      <div class="input-group p-1 w-75">
                           <label class="input-group">Enter the email address</label>
-                          <input class="form-control col-xs-6" type="email" name="email" placeholder="Enter complete email for test" AUTOCOMPLETE="OFF">
+                          <input class="form-control" type="email" name="email" placeholder="Enter complete email for test" AUTOCOMPLETE="OFF">
                       </div>
                       <div class="input-group p-1">
-                          <button class="btn btn-primary">Start Test</button>
+                          <button class="btn button">Start Test</button>
                       </div>
                   </form>
               </div>
-              <div class="container form p-1">
-                <div class="jumbotron text-center">
+              <div class="container form">
+                <div class="jumbotron m-3 text-center">
                   <h1>Report Domains</h1>
                 </div>
                 <form class="form-group p-2" method="POST" action="/saveDomain">
-                    <div class="input-group p-1">
+                    <div class="input-group p-1 w-75">
                         <label class="input-group">Report new disposable domains</label>
                         <input class="form-control col-xs-6" type="text" name="email" placeholder="Enter domains only" AUTOCOMPLETE="OFF">
                     </div>
                     <div class="input-group p-1">
-                        <button class="btn btn-primary">Report</button>
+                        <button class="btn button">Report</button>
                     </div>
                 </form>
               </div>

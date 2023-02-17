@@ -27,7 +27,7 @@ def emailTest():
         cursor.execute('select * from disposableEmail where emailDomain = %s', ([e]))
         result = cursor.fetchone()
         if result:
-            return ' <h3>Dispoable email domain </h3><b>' + e + "</b>&nbsp;&nbsp;<a href="+url_for('index')+">Home</a>"
+            return render_template('success.html', data = str(e))
         else:
             return ' <h3>Legit email domain </h3><b>' + e + "</b>&nbsp;&nbsp;<a href="+url_for('index')+">Home</a>"
 

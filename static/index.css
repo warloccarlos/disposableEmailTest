@@ -4,3 +4,17 @@
 .title{
     height: 140px;
 }
+body{
+  background: rgb(138,28,227);
+  background: linear-gradient(90deg, rgba(138,28,227,1) 0%, rgba(204,127,18,1) 58%, rgba(255,0,164,1) 100%);
+}
+.button{
+  background-color: rgb(180, 50, 50);
+}
+.button:hover{
+  color: black;
+  background-color: rgba(180, 50, 50, 0.4);
+}
+a:hover{
+  color: black;
+}
